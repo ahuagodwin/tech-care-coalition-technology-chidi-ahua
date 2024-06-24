@@ -1,0 +1,53 @@
+
+
+.onfleekq_location {
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.onfleekq_location img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.onfleekq_location .location_name {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontOutfit);
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--colorWhite);
+    text-transform: uppercase;
+    z-index: 9;
+    cursor: pointer;
+}
+
+
+.onfleekq_location:hover .location_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colorPrimary);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    cursor: pointer;
+}

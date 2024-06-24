@@ -1,0 +1,97 @@
+
+
+
+
+
+.ant-input-search .ant-input-search-button {
+    height: 48px;
+    border: 1px solid var(--colorPrimary);
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
+.ant-input, .ant-input-affix-wrapper {
+    border: 1px solid var(--colorGray500);
+    height: 48px
+}
+
+.ant-input-affix-wrapper-lg {
+    border: 1px solid var(--colorGray500);
+    height: 48px
+}
+
+.ant-input-affix-wrapper-lg input {
+    margin-top: -10px;
+}
+
+
+.ant-select {
+    border: 1px solid var(--colorGray500);
+    border-radius: 8px;
+    height: 48px !important;
+    -webkit-border-radius: 8px;
+}
+
+.ant-btn {
+    height: 59px;
+}
+
+.ant-steps .ant-steps-item-wait .ant-steps-item-icon {
+    background: var(--transparent);
+    border-color: var(--colorGray);
+}
+
+.ant-steps .ant-steps-item-process .ant-steps-item-icon {
+    background: var(--transparent);
+    border-color: var(--colorPrimary);
+    border-width: 2px ;
+}
+
+.ant-steps .ant-steps-item-process .ant-steps-item-icon .ant-steps-icon  {
+    color: var(--colorPrimary);
+    font-weight: 500;
+    font-family: var(--fontOutfit);
+}
+
+.ant-steps .ant-steps-item-finish .ant-steps-item-icon .ant-steps-icon  {
+    color: var(--colorWhite);
+    font-weight: 500;
+    font-family: var(--fontOutfit);
+}
+
+.ant-steps .ant-steps-item-finish .ant-steps-item-icon {
+    background: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after {
+    background: var(--colorPrimary);
+}
+
+.ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-content>.ant-steps-item-title  {
+    color: var(--colorPrimary);
+    font-family: var(--fontOutfit);
+    font-weight: 700;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+/* ::-webkit-inner-spin-button, */
+::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+/* ::-moz-inner-spin-button, */
+::-moz-calendar-picker-indicator {
+    display: none;
+    -moz-appearance: none;
+}
+
+/* Internet Explorer */
+::-ms-inner-spin-button,
+::-ms-calendar-picker-indicator {
+    display: none;
+    -ms-appearance: none;
+}

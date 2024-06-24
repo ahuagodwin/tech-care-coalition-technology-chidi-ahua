@@ -1,0 +1,212 @@
+
+
+.blog_wrapper {
+    background: url("../../assets/img/Blog/BlogBg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 6rem;
+}
+
+
+.blog_wrapper .latest {
+    color: var(--colorPrimary);
+    font-family: var(--fontOutfit);
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.blog_wrapper .trending {
+    font-family: var(--fontOutfit);
+    font-weight: 400;
+    color: var(--colorGray);
+    line-height: 35px;
+}
+
+.blog_view_all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--colorPrimary);
+    border-radius: 32px;
+    font-size: 16px;
+    font-family: var(--fontOutfit);
+    font-weight: 400;
+    padding: 12px 25px;
+}
+
+.blog_view_all:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.blog_card {
+    position: relative;
+    background: var(--colorWhite);
+    border-radius: 20px;
+    border: 1px solid var(--colorBorder);
+    display: flex;
+    justify-content: flex-start;
+    align-items: 'center';
+    width: 100%;
+}
+
+.blog_card:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    cursor: pointer;
+}
+
+
+.blog_img {
+    width: 263px;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.blog_content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+}
+å
+.blog_card:hover .blog_content {
+    transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -ms-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+}
+
+.blog_tag {
+    color: var(--colorPrimary);
+    font-size: 15px;
+    font-family: var(--fontOutfit);
+    font-weight: 700;
+    background: var(--colorSubscribe);
+    padding: 10px 15px;
+    border-radius: 24px;
+    margin-bottom: 33px;
+}
+
+.blog_card:hover .blog_tag {
+    background: var(--colorWhite);
+}
+
+.blog_title {
+    font-family: var(--fontOutfit);
+    font-size: 30px;
+    color: var(--colorBlackHeader);
+    font-weight: bold;
+}
+
+.blog_card:hover .blog_title {
+    color: var(--colorWhite);
+}
+
+.blog_read {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorBorder);
+    font-size: 16px;
+    font-family: var(--fontOutfit);
+    font-weight: 600;
+    gap: 20px;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+.blog_card:hover .blog_read {
+    color: var(--colorBlack);
+}
+
+.blog_author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+
+.blog_author img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.blog_author_details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.blog_author_details .name {
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-family: var(--fontOutfit);
+    font-weight: 600;
+}
+
+.blog_card:hover .blog_author_details .name,
+.blog_card:hover .blog_author_details .blog_date {
+    color: var(--colorWhite);
+}
+
+
+.blog_author_details .blog_date {
+    color: var(--colorGray);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--fontOutfit);
+}
+
+
+
+
+@media (max-width: 600px) {
+    .blog_card {
+        position: relative;
+        height: 235px;
+    }
+
+    .blog_tag {
+        margin-bottom: 5px;
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+
+    .blog_img {
+        width: 163px;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    } 
+
+    .blog_title  {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .blog_author img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+    }
+
+    .blog_author_details .name,
+    .blog_author_details .blog_date {
+        font-size: 10px;
+    }
+
+    .blog_read  {
+        padding-top: 10px;
+        font-size: 10px;
+    }
+}

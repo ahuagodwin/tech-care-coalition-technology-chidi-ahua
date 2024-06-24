@@ -1,0 +1,359 @@
+
+
+/* HERO */
+.onfleekq_hero {
+    position: relative;
+    background-position: center;
+    height: 889px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.onfleekq_hero_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.onfleekq_hero_wrapper .onfleekq_hero_img {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 70%;
+    max-height: 889px;
+}
+
+
+.onfleekq_hero_wrapper .onfleekq_hero_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+}
+
+.onfleekq_hero_title {
+    position: absolute;
+    font-family: var(--fontImprint);
+    font-size: 82px;
+    top: 3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: 1328px;
+    color: var(--colorPrimary);
+}
+
+.onfleekq_hero_title .span_white {
+    color: var(--colorWhite);
+}
+
+
+.onfleekq_hero_desc {
+    width: 538px;
+    font-family: var(--fontOutfit);
+    font-size: var(--font24);
+    color: var(--colorBlackHeader);
+    line-height: 128.8%;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.onfleekq_hero_wrapper .onfleekq_hero_img .onfleekq_woman {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 792px;
+    margin-top: 6.1rem;
+}
+
+.onfleekq_slogan_spin {
+    position: absolute;
+    width: 300px; 
+    height: 300px;
+    bottom: 23rem;
+    left: 35rem;
+}
+
+.main_circle_rotate {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+    animation: rotate 10s linear infinite; 
+}
+
+.main_circle {
+    position: absolute;
+    left: 2.8rem;
+    bottom: 4.5rem;
+    width: 70%;
+    height: 60%;
+    z-index: 2; 
+}
+
+
+/* download button */
+.button_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.onfleekq_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.onfleekq_btn:hover span,
+.onfleekq_btn:hover svg {
+    color: var(--colorWhite);
+}
+
+
+/* Optional: Rotation animation */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 400px) {
+    .button_wrapper {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .onfleekq_hero_wrapper {
+        flex-direction: column;
+    }
+
+    .onfleekq_hero_desc {
+        width: 100%;
+    }
+
+    .onfleekq_hero_wrapper .onfleekq_hero_img  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .onfleekq_hero_title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 20px
+    }
+
+    .onfleekq_hero_desc {
+        display: none;
+    }
+
+    .onfleekq_hero_wrapper .onfleekq_hero_img .onfleekq_woman {
+        height: 100%;
+    }
+
+    .onfleekq_slogan_spin {
+        display: none
+    }
+
+}
+
+
+
+
+
+/* home services */
+.home_services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.home_service_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+.home_service_header .caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorWhite);
+    font-family: var(--fontOutfit);
+    font-weight: 700;
+    opacity: 50%;
+    -webkit-text-stroke: 1px var(--colorPrimary);
+    paint-order: stroke fill;
+    text-align: center;
+}
+
+.home_service_header .caption_subtitle {
+    color: var(--colorPrimary);
+    font-family: var(--fontOutfit);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+
+/* CARDS SERVICES */
+.service_card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--colorCard);
+    width: 100%;
+    height: 433px;
+}
+
+.service_card .service_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.service_card:hover .card_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--colorBlack);
+    opacity: 50%;
+}
+
+.service_card .card_overlay_bg {
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.service_card:hover .card_overlay_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    color: var(--colorWhite);
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    background: url("../../assets/img/services/HoverRedBg.svg");
+    background-position: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-size: 40px;
+    font-family: var(--fontOutfit);
+    font-weight: 500;
+    height: 207px;
+    width: 207px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .onfleekq_hero_wrapper {
+        flex-direction: column;
+    }
+
+    .onfleekq_hero_desc {
+        width: 100%;
+    }
+
+    .onfleekq_hero_wrapper .onfleekq_hero_img  {
+        width: 100%;
+        height: 100%;
+    }
+
+    .onfleekq_hero_title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 20px
+    }
+
+    .onfleekq_hero_desc {
+        display: none;
+    }
+
+    .onfleekq_hero_wrapper .onfleekq_hero_img .onfleekq_woman {
+        height: 100%;
+    }
+
+    .onfleekq_slogan_spin {
+        display: none
+    }
+
+    .button_wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .onfleekq_btn .store_title {
+        font-size: 11px;
+    }
+
+    .onfleekq_btn .store_name {
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media  screen and (max-width: 999px) {
+    .onfleekq_hero {
+        position: relative;
+        background-position: center;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .service_card {
+        width: 100%;
+        height: 350px;
+    }
+}

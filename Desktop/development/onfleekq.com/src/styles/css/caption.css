@@ -1,0 +1,36 @@
+
+
+.caption_size_large {
+    font-size: 160px;
+    line-height: 79.7px;
+}
+
+.caption_size_small {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+
+@media (max-width: 500px) {
+    .caption_size_large {
+        font-size: 40px;
+        line-height: 38.7px;
+    }
+
+    .caption_size_small {
+        font-size: 30px;
+        line-height: 29.1px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 999px) {  
+    .caption_size_large {
+        font-size: 50px;
+        line-height: 38.7px;
+    }
+
+    .caption_size_small {
+        font-size: 30px;
+        line-height: 29.1px;
+    }
+}

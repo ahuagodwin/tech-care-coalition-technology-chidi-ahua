@@ -1,0 +1,77 @@
+
+.clearfix {
+    clear: both;
+}
+
+
+/* CONTACT HERO */
+
+.contact_card_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fontOutfit);
+}
+
+.contact_card {
+    border: 1px solid var(--colorPrimary);
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    height: 200px;
+}
+
+.contact_card:hover {
+    background: var(--colorCard);
+    border: 1px solid var(--colorCard);
+    cursor: pointer;
+}
+
+.contact_card .icon {
+    margin-top: -4rem;
+}
+
+
+/* CONTACT BANNER */
+.contact_card_banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* QUERIES */
+@media (max-width: 640px) {
+    .contact_card_wrapper  {
+        display: block;
+    }
+
+    .contact_card {
+        width: 100%;
+    }
+
+    .contact_card:nth-child(1) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@media (min-width: 641px) and (max-width: 999px) {
+    .contact_card_wrapper  {
+        display: flex;
+    }
+
+    .contact_card {
+        width: 400px;
+    }
+}

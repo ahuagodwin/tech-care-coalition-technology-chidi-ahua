@@ -1,0 +1,255 @@
+
+
+
+.cta_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 654px;
+    width: 100%;
+}
+
+.cta_content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%
+}
+
+
+.cta_title {
+    color: white;
+    font-size: 60px;
+    line-height: 74px;
+    font-weight: bold;
+}
+
+.cta_desc {
+    font-size: 30px;
+    color: var(--colorWhite);
+    font-weight: 400;
+    width: 371px;
+    padding-bottom: 1rem;
+}
+
+
+.cta_btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.onfleekQ_app {
+    position: relative;
+}
+
+.onfleekQ_app img {
+    position: absolute;
+    top: -20rem;
+    bottom: 0;
+    right: 0;
+    height: 900px;
+}
+
+
+
+/* count down */
+.count_wrapper {
+    background-image: url("../../assets/img/CountDownBG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0;
+    margin-bottom: 7rem;
+}
+
+.count_down_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.count_down_content .count {
+    color: var(--colorPrimary);
+    font-size: 60px;
+    font-weight: bold;
+    font-family: var(--fontOutfit);
+    list-style: 120%;
+}
+
+.count_down_content .title {
+    color: var(--colorGray);
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--fontOutfit);
+    list-style: 120%;
+}
+
+
+
+
+
+/* VENDOR INFORMATION */
+
+.vendor_img {
+    width: 689px;
+    height: 596px;
+}
+
+
+.vendor_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.vendor_img .tags {
+    display: none;
+}
+
+
+.vendor_content .tags {
+    color: var(--colorPrimary);
+    font-size: 50px;
+    line-height: 120%;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-wrap: nowrap;
+    gap: 10px;
+}
+
+.vendor_content .tags #id {
+    color: var(--colorGray);
+}
+
+.vendor_content .desc {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--colorBlackHeader);
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 2rem;
+    line-height: 120%;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 640px) {
+    .cta_wrapper {
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+
+    .onfleekQ_app {
+        display: none;
+    }
+
+    .cta_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cta_desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta_btn {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cta_btn button:nth-child(1) {
+        margin-bottom: 10px ;
+    }
+
+    .count_down_content .title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .vendor_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .vendor_img .tags {
+        display: flex;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vendor_img .tags {
+        color: var(--colorPrimary);
+        font-size: 30px;
+        line-height: 120%;
+        font-weight: bold;
+        padding-bottom: 1rem;
+        text-wrap: nowrap;
+        gap: 10px;
+    }
+    
+    .vendor_img .tags #id {
+        color: var(--colorGray);
+    }
+
+    .vendor_content .tags {
+        display: none;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vendor_content .desc {
+        font-size: 18px;
+    }
+
+    .onfkq_primary {
+        font-size: 30px;
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 640px) and (max-width: 999px) {
+    .cta_wrapper {
+        height: 100%;
+        padding: 3rem 0rem;
+    }
+
+    .onfleekQ_app {
+        display: none;
+    }
+
+    .cta_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .cta_desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cta_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
