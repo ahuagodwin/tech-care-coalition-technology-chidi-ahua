@@ -62,7 +62,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10rem 0;
     margin-bottom: 7rem;
 }
 
@@ -75,7 +74,6 @@
 
 .count_down_content .count {
     color: var(--colorPrimary);
-    font-size: 60px;
     font-weight: bold;
     font-family: var(--fontOutfit);
     list-style: 120%;
@@ -83,7 +81,6 @@
 
 .count_down_content .title {
     color: var(--colorGray);
-    font-size: 25px;
     font-weight: 400;
     font-family: var(--fontOutfit);
     list-style: 120%;
@@ -176,7 +173,6 @@
     }
 
     .count_down_content .title {
-        font-size: 18px;
         text-align: center;
     }
 

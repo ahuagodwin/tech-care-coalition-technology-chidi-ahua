@@ -5,7 +5,6 @@
     justify-content: space-between;
     align-items: center;
     background: var(--colorWhite);
-    padding: 40px;
 }
 
 .testimonials_wrapper.hidden {

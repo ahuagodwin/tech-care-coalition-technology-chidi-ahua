@@ -11,12 +11,12 @@ const Locations = () => {
       <HeaderStroke
         title="Available Location"
         label="We are available in the following cities"
-        size="text-[42px] sm:text-[42px] md:text-[70px] lg:text-[140px]"
-        fontSize="text-[40px] sm:text-[30px] md:text-[40px] lg:text-[60px] leading-[40px] -mt-[28px] sm:-mt-[28px] md:-mt-[35px] -mt-24"
+        size="text-35 sm:text-53 md:text-70 lg:text-140"
+        fontSize="text-30 sm:text-30 md:text-40 lg:text-60 leading-[30px] lg:leading-[40px] -mt-[20px] sm:-mt-[28px] md:-mt-[35px] -mt-24"
       />
 
       <div className="onfleekq_container mt-16 mb-24">
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5">
           {businessLocation.map((item, index) => {
             const isLastSingleItem = businessLocation.length % 2 !== 0 && index === businessLocation.length - 1;
 
@@ -26,7 +26,7 @@ const Locations = () => {
                 key={index}
               >
                 <img src={item?.img} alt={onfleekQ.company.name} />
-                <span className="location_name">{item?.title}</span>
+                <span className="location_name text-30 md:text-40 lg:text-60">{item?.title}</span>
                 <span className="location_overlay"></span>
               </section>
             );

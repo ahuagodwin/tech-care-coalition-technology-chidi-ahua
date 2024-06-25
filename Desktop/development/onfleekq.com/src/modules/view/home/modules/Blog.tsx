@@ -24,7 +24,7 @@ const Blog = () => {
             <span className='blog_view_all w-[7rem]'>View All</span>
           </div>
 
-            <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-10'>
               <BlogCard blogs={blogs} />
             </div>
         </onfkQ.Container>

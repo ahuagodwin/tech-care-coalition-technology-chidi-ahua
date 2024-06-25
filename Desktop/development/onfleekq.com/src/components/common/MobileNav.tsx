@@ -23,10 +23,10 @@ const MobileNav:React.FC<MenuProps> = ({ close }) => {
         exit="exit"
         variants={variants}
         transition={{ duration: 0.5 }}
-        className="fixed top-0 left-0 w-full h-full bg-overlay z-50"
+        className="fixed top-0 left-0 right-0 bottom-0 w-full h-full bg-overlay z-50 overflow-hidden"
   >
     <div
-      className="fixed top-0  right-0 bottom-0 w-full sm:w-[60%] md:w-2/4 lg:w-2/4 h-screen z-50 bg-cover bg-center bg-no-repeat px-4 py-6"
+      className="fixed top-0 right-0 bottom-0 w-full sm:w-[60%] md:w-2/4 lg:w-2/4 h-screen z-50 bg-cover bg-center bg-no-repeat px-6 py-6 overflow-hidden"
       style={{ backgroundImage: `url(${ImgIcon.SidebarBg})` }}
     >
       <div className="flex justify-center items-center flex-col w-full">
@@ -48,21 +48,21 @@ const MobileNav:React.FC<MenuProps> = ({ close }) => {
         {headerData.map((item) => (
           <div className="flex justify-center items-start flex-col w-full py-10">
             {item.childrenLeft.map((item) => (
-              <Link to={item?.path} className={`text-24 text-blackHeader font-outfit py-2 border-b border-white w-full ${window.location.pathname === item?.path ? "text-primary" : "inherit"}`}>{item?.title}</Link>
+              <Link to={item?.path} className={`text-20 text-blackHeader font-outfit py-2 border-b border-white w-full ${window.location.pathname === item?.path ? "text-primary" : "inherit"}`}>{item?.title}</Link>
             ))}
 
             {item.childrenRight.map((item) => (
-              <Link to={item?.path} className={`text-24 text-blackHeader font-outfit py-2 border-b border-white w-full ${window.location.pathname === item?.path ? "text-primary" : "inherit"}`}>{item?.title}</Link>
+              <Link to={item?.path} className={`text-20 text-blackHeader font-outfit py-2 border-b border-white w-full ${window.location.pathname === item?.path ? "text-primary" : "inherit"}`}>{item?.title}</Link>
             ))}
           </div>
         ))}
 
-        <div className='flex justify-center items-center lg:items-start space-x-10'>
-            <ImgIcon.FacebookIcon size={40} color={`var(--colorPrimary)`} />
-            <ImgIcon.Instagram size={40} color={`var(--colorPrimary)`} />
-            <ImgIcon.LinkedinIcon size={40} color={`var(--colorPrimary)`} />
-            <ImgIcon.TwitterIcon size={40} color={`var(--colorPrimary)`} />
-            <ImgIcon.TiktokIcon size={40} color={`var(--colorPrimary)`} />
+        <div className='flex justify-center items-center space-x-5'>
+            <ImgIcon.FacebookIcon size={25} color={`var(--colorPrimary)`} />
+            <ImgIcon.Instagram size={25} color={`var(--colorPrimary)`} />
+            <ImgIcon.LinkedinIcon size={25} color={`var(--colorPrimary)`} />
+            <ImgIcon.TwitterIcon size={25} color={`var(--colorPrimary)`} />
+            <ImgIcon.TiktokIcon size={25} color={`var(--colorPrimary)`} />
         </div>
       </div>
     </div>

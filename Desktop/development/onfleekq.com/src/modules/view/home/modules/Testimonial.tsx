@@ -20,8 +20,8 @@ const Testimonial = () => {
       <HeaderStroke
         title="Customers Stories"
         label="Testimonials & Reviews"
-        size="caption_size_large"
-        fontSize="caption_size_small"
+        size="text-35 sm:text-50 md:text-60 lg:text-160 leading-[33px] lg:leading-[79.7px]"
+        fontSize="text-25 sm:text-30 md:text-40 lg:text-60 leading-[24.8px] lg:leading-[60px]"
       />
 
       <onfkQ.Container>
@@ -33,7 +33,7 @@ const Testimonial = () => {
          transition={{ duration: 0.5 }}
          className="mt-10"
          >
-        <div className={`testimonials_wrapper ${index === activeIndex ? "block" : "hidden"}`} key={index}>
+        <div className={`testimonials_wrapper p-5 lg:p-10 ${index === activeIndex ? "block" : "hidden"}`} key={index}>
             <section
               className="testimonial_content"
             >

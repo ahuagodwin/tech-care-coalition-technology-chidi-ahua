@@ -7,14 +7,12 @@
 
 .onfleekq_acc_number {
   font-family: var(--fontOutfit);
-  font-size: 16px;
   font-weight: 400;
   color: var(--colorBlack);
   text-transform: uppercase;
 }
 
 .onfleekq_acc_title {
-  font-size: 32px;
   font-weight: 700;
   font-family: var(--fontOutfit);
   margin-top: 1rem;
@@ -23,34 +21,18 @@
 .onfleekq_acc_subtitle {
   color: #888888;
   font-family: var(--fontOutfit);
-  font-size: 32px;
   margin-top: 1rem;
   font-weight: 400;
 }
 
 .onfleekq_acc_content .content_number {
-  font-size: 72px;
   font-weight: 700;
   font-family: var(--fontOutfit);
   color: var(--colorPrimary);
 }
 
 .onfleekq_acc_content .content_title {
-  font-size: 24px;
   font-family: var(--fontOutfit);
   font-weight: 400;
   color: var(--colorBlackBody);
-}
-
-
-
-
-@media screen and (max-width: 768px) {
-  .onfleekq_acc_title {
-    font-size: 12px;
-  }
-
-  .onfleekq_acc_subtitle {
-    font-size: 14px;
-  }
 }

@@ -34,37 +34,37 @@ const slides: Slide[] = [
                 your best, which is why we have curated a selection of top-notch
                 services and products to meet your beauty needs.
               </span>
-              <div className="button_flex gap-5 lg:gap-5 pt-4">
-                <onfkQ.Button
-                  type="onfleekq"
-                  bgColor="bg-primary hover:bg-blackHeader"
-                  color="onfleekq_white"
-                  name="Apple Store"
-                  label="Download on the"
-                  icon={
-                    <ImgIcon.ArrowIcon width="28" color="var(--colorWhite)" />
-                  }
-                  storeIcon={
-                    <ImgIcon.AppleIcon size={45} color="text-blackHeader" />
-                  }
-                  border="shadow-custom1"
-                />
-                <onfkQ.Button
-                  type="onfleekq"
-                  bgColor="bg-card hover:bg-blackHeader"
-                  color="onfleekq_primary"
-                  name="Apple Store"
-                  label="Download on the"
-                  icon={
-                    <ImgIcon.ArrowIcon width="28" color="var(--colorPrimary)" />
-                  }
-                  storeIcon={<img src={ImgIcon.GoogleIcon} />}
-                  border="border-2 border-primary hover:border-blackHeader shadow-custom1"
-                />
-              </div>
+              <div className="button_flex gap-2 lg:gap-5 pt-4">
+              <onfkQ.Button
+                type="onfleekq"
+                bgColor="bg-primary hover:bg-blackHeader"
+                color="onfleekq_white"
+                name="Apple Store"
+                label="Download on the"
+                icon={
+                  <ImgIcon.ArrowIcon width="28" color="var(--colorWhite)" />
+                }
+                storeIcon={
+                  <ImgIcon.AppleIcon size={45} color="text-blackHeader" />
+                }
+                border="shadow-custom1"
+              />
+              <onfkQ.Button
+                type="onfleekq"
+                bgColor="bg-card hover:bg-blackHeader"
+                color="onfleekq_primary"
+                name="Apple Store"
+                label="Download on the"
+                icon={
+                  <ImgIcon.ArrowIcon width="28" color="var(--colorPrimary)" />
+                }
+                storeIcon={<img src={ImgIcon.GoogleIcon} />}
+                border="border-2 border-primary hover:border-blackHeader shadow-custom1"
+              />
+            </div>
             </section>
 
-            <div className="h-[30rem] lg:h-full relative">
+            <div className="w-full h-screen lg:h-full relative">
               <img
                 src={ImgIcon.HeroLady}
                 alt="hero"
@@ -103,7 +103,7 @@ const slides: Slide[] = [
           <p className="text-blackHeader font-normal text-25 lg:text-41 py-3">
             Book. Buy. <span className="text-primary">Beautify</span>
           </p>
-          <div className="button_flex gap-5 lg:gap-5 pt-4">
+          <div className="button_flex gap-2 lg:gap-5 pt-4">
             <onfkQ.Button
               type="onfleekq"
               bgColor="bg-primary hover:bg-blackHeader"
@@ -342,7 +342,7 @@ const Slider: React.FC = () => {
               exit="exit"
               variants={variants}
               transition={{ duration: 0.5 }}
-              className="absolute top-0 left-0 right-0 w-full h-screen pt-10 lg:pt-20 justify-center items-center"
+              className="absolute top-0 left-0 right-0 bottom-0 w-full h-full pt-10 lg:pt-20 justify-center items-center"
               style={{
                 backgroundImage: `url(${slide.bgImage})`,
                 backgroundPosition: `center`,
