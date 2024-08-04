@@ -1,0 +1,17 @@
+# Custom Dictionary Words
+Ahua
+Biodata
+chartjs
+Chidi
+Chinedu
+coalitiontechnologies
+Deji
+formik
+Ilesanmi
+Magaji
+Nwachukwu
+Oghojafor
+tabler
+Temitope
+tsbuildinfo
+Uzor

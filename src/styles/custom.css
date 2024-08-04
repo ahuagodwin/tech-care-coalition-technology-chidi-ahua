@@ -1,0 +1,259 @@
+
+
+
+/* CUSTOM AND GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@font-face  {
+    font-family: 'Imprint';
+    src: url('../../assets/fonts/ImprintRegular.ttf') format('truetype');
+    font-style: normal;
+}
+
+@font-face  {
+    font-family: 'ColomboExtraBold';
+    src: url('../../assets/fonts/PostNoBillsColombo-ExtraBold.ttf') format('truetype');
+    font-style: normal;
+}
+
+:root {
+    --colorPrimary: #006BAC;
+    --colorPrimaryLight: #FFF4F4;
+    --colorBlack: #000000;
+    --colorBlackHeader:#072635;
+    --colorBlackBody: #212121;
+    --colorWhite: #ffffff;
+    --colorGray: #707070;
+    --colorGray500: #5D5A5A;
+    --colorCard: #FFF4F4;
+    --colorSubscribe: #FFD1D4;
+    --colorPlaceholder: #9B6E71;
+    --colorBorder: #364152;
+    --colorSidebar: #FAFAFC;
+    --colorSuccess: rgb(67, 195, 67);
+    --colorShowAll: #01F0D0;
+    --colorRespiratoryBg: #E0F3FA;
+    --colorTemperatureBg: #FFE6E9;
+    --colorHeartBg: #FFE6F1;
+    --colorActiveState: #D8FCF7;
+    --colorSuccessBg: rgba(5, 166, 41, 20%);
+    --colorWarningBg: rgb(255, 88, 89, 20%);
+    --colorPending: #be862d;
+    --colorPendingBg: rgb(128, 128, 128, 20%);
+    --colorYellowBg: rgb(255, 255, 0, 20%);
+    --colorIconBg: #F6F7F8;
+    --colorTransparent: transparent;
+    --fontOutfit: "Outfit", sans-serif;
+    --fontPoppins: "Poppins", sans-serif;
+    --fontImprint: 'Imprint';
+    --fontManrope: 'Manrope', sans-serif;
+    --fontColomboExtraBold: 'ColomboExtraBold';
+    --boxShadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    --colorDashboardBg: #e5e5e549;
+    --colorAuthBg: url("../assets/img/auth/authBg.png");
+    --colorSidebarLogout: url("../assets/img/icons/sidebarLogout.svg");
+    --boxShadowRight: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+
+    /* font size */
+    --font24: 24px;
+
+
+    /* radius */
+    --radius8: 8px;
+    --radius10: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scroll-snap-type: both mandatory;
+    box-shadow: none;
+}
+
+a, textarea, select, button, input {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.active {
+    background: var(--colorShowAll);
+    color: var(--colorBlackHeader);
+    border-radius: 41px;
+    padding: 11px  16px;
+}
+
+.activeSub {
+    color: var(--colorPrimary);
+    border-left: 4px solid var(--colorPrimary);
+}
+
+/* container */
+.dashboard_container {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem;
+    overflow-x: hidden;
+}
+
+
+.booking_completed, .booking_Completed, .booking_success .booking_approved {
+    background: var(--colorSuccessBg);
+    color: var(--colorSuccess);
+}
+
+.booking_failed, .booking_Failed, .booking_unsuccessful .booking_Unsuccessful {
+    background: var(--colorWarningBg);
+    color: var(--colorPrimary);
+}
+
+.booking_pending, .booking_Pending {
+    background: var(--colorYellowBg);
+    color: var(--colorPending);
+}
+
+.booking_processing, .booking_Processing {
+    background: var(--colorPendingBg);
+    color: var(--colorGray500);
+}
+
+
+.ant-btn, .ant-btn:focus {
+    outline-style: none !important;
+    box-shadow: none !important;
+    height: 49px;
+    border-color: none;
+}
+
+.ant-switch, .ant-switch:focus {
+    border: none !important;
+    outline: none !important;
+    border-color: none;
+    box-shadow: none !important;
+}
+
+.ant-input, .ant-input-password {
+    outline-style: none !important;
+    box-shadow: none !important;
+    height: 49px;
+    border: 1.5px solid var(--colorGray);
+    border-color: none;
+}
+
+.ant-input:focus, .ant-input-password:focus   {
+    border: 1.5px solid var(--colorGray);
+    outline-style: none !important;
+    box-shadow: none !important;
+    border-color: none;
+}
+
+.ant-otp-input, .ant-input-otp {
+    width: 45px;
+    border: 1.5px solid var(--colorPrimary);
+    color: var(--colorPrimary);
+    font-family: var(--fontOutfit);
+}
+
+.ant-otp-input:valid, .ant-input-otp:valid  {
+    border: 1.5px solid var(--colorPrimary);
+}
+
+.ant-otp-input:invalid, .ant-input-otp:invalid {
+    border: 1.5px solid var(--colorGray);
+}
+
+.ant-table thead th {
+    text-wrap: nowrap;
+    font-family: var(--fontManrope) !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    color: var(--colorBlackHeader) !important;
+    background: var(--colorTransparent) !important;
+}
+
+ .ant-table thead,  .ant-table-thead {
+    border-radius: 50px;
+    background: #F6F7F8 !important;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.ant-btn-primary {
+    color: #fff;
+    background: var(--colorPrimary);
+    border: none;
+    outline: none;
+    border-color: none;
+}
+
+.ant-btn-default {
+    color: var(--colorPrimary);
+    background: var(--colorTransparent);
+    border: 2px solid var(--colorPrimary);
+    outline: none;
+}
+
+.ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #fff;
+    background: var(--colorPrimary);
+    border: none;
+    outline: none;
+    border-color: none;
+  }
+
+ .ant-switch.ant-switch-checked:hover:not(.ant-switch-disabled) {
+    background: var(--colorPrimary);
+    border: none;
+    box-shadow: none;
+    border-color: none;
+}
+
+ .ant-input-affix-wrapper > input.ant-input, 
+ .ant-input-affix-wrapper > textarea.ant-input {
+    padding-bottom: 10px;
+}
+
+@media  (max-width: 499px) {
+    .ant-otp-input, .ant-input-otp {
+        width: 45px;
+        border: 1.5px solid var(--colorPrimary);
+        color: var(--colorPrimary);
+        font-family: var(--fontOutfit);
+    }
+}
+
+@media  (min-width: 500px) {
+    .ant-otp-input, .ant-input-otp {
+        width: 55px;
+        border: 1.5px solid var(--colorPrimary);
+        color: var(--colorPrimary);
+        font-family: var(--fontOutfit);
+    }
+}
+
+
+@media (min-width: 999px) {
+    .dashboard_container {
+        max-width: 100%;
+        padding: 0rem; 
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .dashboard_container {
+        max-width: 1600px;
+        padding: 0rem; 
+    }
+}
