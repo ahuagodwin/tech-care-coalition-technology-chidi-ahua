@@ -28,7 +28,7 @@ export const loginAction = (username: string, password: string, navigate: Naviga
       localStorage.setItem('@basicAuth', JSON.stringify(authHeader));
       dispatch(authUserSuccess(res?.data));
       toast.success(res?.data?.message);
-      navigate(paths.dashboardMessage);
+      navigate(paths.dashboardPatients);
     }
   } catch (isAuthUserError: any) {
     dispatch(authUserFailure(isAuthUserError?.response?.data?.error_message || "Authentication failed. Please try again."));

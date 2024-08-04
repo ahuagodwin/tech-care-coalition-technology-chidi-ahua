@@ -40,7 +40,7 @@ const LoginAuth = () => {
 
   useEffect(() => {
     if (token) {
-      navigate(paths.dashboardPatients);
+      navigate(paths?.dashboardPatients);
     }
   }, [navigate, token]);
 
