@@ -131,3 +131,9 @@ interface DiagnosisItem {
   month?: string
   bg?: string;
 }
+
+interface UserAccess {
+  accessToken?: string | null;
+  redirect?: string;
+
+}

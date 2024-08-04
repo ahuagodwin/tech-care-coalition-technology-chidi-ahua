@@ -5,6 +5,7 @@ chartjs
 Chidi
 Chinedu
 coalitiontechnologies
+decod
 Deji
 formik
 Ilesanmi
