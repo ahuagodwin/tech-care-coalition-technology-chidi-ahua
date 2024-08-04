@@ -34,13 +34,13 @@ const LoginAuth = () => {
     },
     validationSchema: Schema.LoginSchema,
     onSubmit: async (values) => {
-        await dispatch(apiService.loginAction(values.username, values.password,  navigate))
+        await dispatch(apiService.loginAction(values.username, values.password))
     },
   })
 
   useEffect(() => {
     if (token) {
-      navigate(paths?.dashboardPatients);
+      navigate(paths.dashboardPatients);
     }
   }, [navigate, token]);
 
