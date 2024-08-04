@@ -19,7 +19,6 @@ const LoginAuth = () => {
 
   const token = localStorage.getItem("@basicAuth");
 
-  console.log(" login token:", token)
 
   useEffect(() => {
     if(isAuthUserError) {
