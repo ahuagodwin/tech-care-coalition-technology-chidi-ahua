@@ -13,5 +13,6 @@ Nwachukwu
 Oghojafor
 tabler
 Temitope
+Toastify
 tsbuildinfo
 Uzor

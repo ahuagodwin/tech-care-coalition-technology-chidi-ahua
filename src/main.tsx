@@ -7,6 +7,7 @@ import { createTheme, MantineProvider as MantineConfig } from '@mantine/core';
 import '@mantine/core/styles.css';
 import { Provider } from 'react-redux'
 import { store } from './api/store.tsx'
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const theme = createTheme({

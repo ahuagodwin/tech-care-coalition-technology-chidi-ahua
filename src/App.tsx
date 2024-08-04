@@ -8,7 +8,7 @@ const App = () => {
       <Router>
         <AppRoutes />
       </Router>
-      <ToastContainer position="top-right" />
+      <ToastContainer position="bottom-right" />
     </>
   );
 };

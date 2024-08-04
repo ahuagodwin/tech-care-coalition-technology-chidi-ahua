@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=DEVELOPMENT vite",
+    "dev": "cross-env NODE_ENV=development vite",
     "build": "tsc -b && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "start": "cross-env NODE_ENV=PRODUCTION serve -s dist",
-    "start:dev": "cross-env NODE_ENV=DEVELOPMENT vite"
+    "start": "cross-env NODE_ENV=production serve -s dist",
+    "start:dev": "cross-env NODE_ENV=development vite"
   },
   "dependencies": {
     "@mantine/core": "^7.11.2",
