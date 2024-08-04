@@ -1,11 +1,14 @@
-import { Navigate, Outlet } from "react-router-dom"
-import { paths } from '@/constants'
+import { Navigate, Outlet } from "react-router-dom";
+import { paths } from "@/constants";
 
-const Authorized:React.FC<UserAccess> = ({ accessToken }) => {
 
-  const isValidToken = Boolean(accessToken)
 
-  return isValidToken ? <Outlet /> : <Navigate to={paths.login} replace />
-}
+const Authorized = () => {
+  const accessToken = localStorage.getItem("@basicAuth")
 
-export { Authorized }
+  const isValidToken = accessToken && typeof accessToken === 'string' && accessToken.trim() !== '';
+
+  return isValidToken ? <Outlet /> : <Navigate to={paths.login} replace />;
+};
+
+export { Authorized };

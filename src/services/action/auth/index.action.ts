@@ -26,7 +26,7 @@ export const loginAction = (username: string, password: string) => async (dispat
       const authHeader = res?.config?.headers?.Authorization || '';
       localStorage.setItem('@basicAuth', JSON.stringify(authHeader));
       dispatch(authUserSuccess(res?.data));
-      toast.success(res?.data?.message);
+      toast.success(res?.data?.message || "Authenticated Successfully");
     }
   } catch (isAuthUserError: any) {
     dispatch(authUserFailure(isAuthUserError?.response?.data?.error_message || "Authentication failed. Please try again."));

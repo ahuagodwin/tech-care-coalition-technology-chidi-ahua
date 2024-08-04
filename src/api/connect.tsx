@@ -20,11 +20,11 @@ export const userRequest = axios.create({
 });
 
 export const setAuthToken = (TOKEN: any) => {
-  userRequest.defaults.headers.Authorization = `Bearer ${TOKEN}`;
+  userRequest.defaults.headers.Authorization = `Basic ${TOKEN}`;
 };
 
 
-const TOKEN: string | null = JSON.parse(localStorage.getItem("@accessToken") || "null");
+const TOKEN: string | null = JSON.parse(localStorage.getItem("@basicAuth") || "null");
 
 if (TOKEN) {
   setAuthToken(TOKEN);

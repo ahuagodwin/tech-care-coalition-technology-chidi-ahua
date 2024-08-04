@@ -17,8 +17,9 @@ const LoginAuth = () => {
   const dispatch:ThunkDispatch<RootState, void, any> = useDispatch();
   const { isAuthUserError, isAuthUserLoading } = useSelector((state: RootState) => state.authUser)
 
-  const token = localStorage.getItem("@basicAuth")
+  const token = localStorage.getItem("@basicAuth");
 
+  console.log(" login token:", token)
 
   useEffect(() => {
     if(isAuthUserError) {
@@ -39,10 +40,10 @@ const LoginAuth = () => {
   })
 
   useEffect(() => {
-    if (token) {
+    if (token && typeof token === 'string' && token.trim() !== '') {
       navigate(paths.dashboardPatients);
     }
-  }, [navigate, token]);
+  }, [token, navigate]);
 
 
   return (

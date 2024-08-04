@@ -6,15 +6,14 @@ import { Routes, Route, Navigate } from "react-router-dom"
 
 
 const AppRoutes = () => {
-  const token = localStorage.getItem("@basicAuth")
-
+ 
   return (
     <>
         <Routes>
             <Route path={paths.home} element={<Navigate to={paths.login} replace />} />
             <Route path={paths.login} element={<LoginAuth />} />
 
-            <Route element={<Authorized accessToken={token} />} >
+            <Route element={<Authorized />} >
                 <Route path={paths.dashboardOverview} element={<DashboardOverview />} />
                 <Route path={paths.dashboardPatients} element={<DashboardPatients/>} />
                 <Route path={paths.dashboardSchedule} element={<DashboardSchedule />} />
