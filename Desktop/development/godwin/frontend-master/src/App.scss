@@ -1,0 +1,104 @@
+// Bootstrap 5
+$enable-negative-margins: true;
+@import "./scss/bootstrap-modifier";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: local("Gilroy-Medium"), url(@/assets/fonts/Gilroy-Medium.woff) format("woff"), url(@/assets/fonts/Gilroy-Medium.woff2) format("woff2"),
+}
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: local("Gilroy-Regular"), url(@/assets/fonts/Gilroy-Regular.woff) format("woff"), url(@/assets/fonts/Gilroy-Regular.woff2) format("woff2"),
+}
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: local("Gilroy-Bold"), url(@/assets/fonts/Gilroy-Bold.woff) format("woff"), url(@/assets/fonts/Gilroy-Bold.woff2) format("woff2"),
+}
+/* html, body {
+    min-height: 100%;
+} */
+// My Custom class
+
+*{
+    scrollbar-width: none;
+    scroll-snap-type: both mandatory
+}
+@import "./scss/custom";
+
+
+.scrollView {
+    animation: animate-in linear forwards,
+               animate-out linear forwards;
+    animation-timeline: view();
+    animation-range: entry, exit;
+  }
+
+  .six {
+    animation-delay: 6s;
+  }
+  
+  .seven {
+    animation-delay: 7s
+  }
+
+  .eight {
+    animation-delay: 8s
+  }
+
+  .nine {
+    animation-delay: 9s
+  }
+  .ten {
+    animation-delay: 10s
+  }
+
+  .twelve {
+    animation-delay: 12s;
+  }
+
+  .fourthen {
+    animation-delay: 14s
+  }
+
+  .cardHover  {
+    cursor: pointer;
+  }
+
+
+
+  .cardHover:hover .iconScale {
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+   
+}
+
+.scale:hover {
+  transform: scale(1.2);
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2)
+}
+
+
+
+
+@keyframes animate-in {
+    0% { opacity: 0; transform: translateY(100%); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes animate-out {
+    0% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-100%); }
+  }
+
+ 

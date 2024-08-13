@@ -1,0 +1,17 @@
+@mixin generate-css-variables-for-typography() {
+    $sizes: map-get($typography-maps,'sizes');
+    $line-heights: map-get($typography-maps,'line-heights');
+    $weights: map-get($typography-maps,'weights');
+
+    @each $num, $size in $sizes{
+        #{"--spa-size-" + $num}: #{$size};
+    }
+
+    @each $key, $lh in $line-heights{
+        #{"--spa-lh-" + $key}: #{$lh};
+    }
+
+    @each $weight in $weights{
+        #{"--spa-fw-" + $weight}: #{$weight};
+    }
+}

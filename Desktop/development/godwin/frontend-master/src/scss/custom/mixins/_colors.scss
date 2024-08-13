@@ -1,0 +1,17 @@
+
+@mixin generate-css-variables-for-colors() {
+    @each $colorName, $color in $color-maps {
+        @each $key, $value in $color {
+            $keyName: "--spa-color-" + $colorName + "-" + $key;
+            $rgbKeyName: "--spa-color-" + $colorName + "-" + $key + "-rgb";
+            @if $key == "default" {
+                $keyName: "--spa-color-" + $colorName;
+                $rgbKeyName: "--spa-color-" + $colorName + "-rgb";
+            }
+            #{$keyName}: #{$value};
+            #{$rgbKeyName}: #{red($value)},#{green($value)},#{blue($value)};
+        }
+    }
+}
+
+

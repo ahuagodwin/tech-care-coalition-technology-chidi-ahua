@@ -1,0 +1,15 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [
+        "scroll-timeline"
+    ],
+    "words": [
+        "scroll-timeline"
+    ],
+    "ignoreWords": [
+        "scroll-timeline"
+    ],
+    "import": []
+}

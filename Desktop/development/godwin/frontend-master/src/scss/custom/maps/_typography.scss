@@ -1,0 +1,21 @@
+
+$typography-maps:(
+    /* sizes:(
+        10: 10px, 11: 11px, 12: 12px, 13: 13px, 14: 14px, 15: 15px, 16: 16px, 18: 18px, 
+        20: 20px, 22: 22px, 24: 24px, 26: 26px, 28: 28px, 30: 30px, 32: 32px, 35: 35px, 
+        38: 38px, 40: 40px,
+    ), */
+    weights:(
+        100,200,300,400,500,600,700,800,900
+    )
+);
+$sizes:(10:10px);
+$line-heights: (
+    xs: 1, sm: 1.25, md: 1.5, lg: 2
+);
+@for $var from 1 through 100 {
+    $sizes: map-merge($sizes,($var: $var+"px"));
+    $line-heights: map-merge($line-heights,($var: $var+"px"));
+}
+$typography-maps: map-merge($typography-maps,(sizes:$sizes));
+$typography-maps: map-merge($typography-maps,(line-heights:$line-heights));

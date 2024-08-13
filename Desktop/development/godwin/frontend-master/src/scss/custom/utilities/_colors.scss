@@ -1,0 +1,16 @@
+@import '../maps/colors.scss';
+
+@each $colorName, $color in $color-maps {
+  @each $key, $value in $color {
+      @if $key == "default" {
+        // Add "" + to cast it to string because it is a color name
+        .text-#{"" + $colorName} {color: var(--spa-color-#{$colorName}) !important;}
+        .bg-#{"" + $colorName} {background-color: var(--spa-color-#{$colorName}) !important;}
+        .border-#{"" + $colorName} {border-color: var(--spa-color-#{$colorName}) !important;}
+      } @else {
+        .text-#{"" + $colorName}-#{$key} {color: var(--spa-color-#{$colorName}-#{$key}) !important;}
+        .bg-#{"" + $colorName}-#{$key} {background-color: var(--spa-color-#{$colorName}-#{$key}) !important;}
+        .border-#{"" + $colorName}-#{$key} {border-color: var(--spa-color-#{$colorName}-#{$key}) !important;}
+      }
+  }
+}

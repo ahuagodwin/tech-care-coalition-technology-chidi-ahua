@@ -1,0 +1,57 @@
+
+@import "./custom/maps/general.scss";
+
+$percentileSizing: ();
+@for $var from 1 through 100 {
+    $percentileSizing: map-merge($percentileSizing,($var: $var+unquote("%")))
+}
+$pixelSizing: ();
+@for $var from 1 through 1500 {
+    $pixelSizing: map-merge($pixelSizing,($var: #{$var}px))
+}
+
+$utilities: (
+  "opacity": (
+    property: opacity,
+    values: (
+      0: 0, 5: .05, 10: .1, 20: .2, 25: .25, 30: .3, 40: .4, 
+      50: .5, 60: .6, 70: .7, 75: .75, 80: .8, 90: .9, 100: 1,
+    )
+  ),
+
+  "width": (
+    property: width,
+    class: w,
+    values: map-merge($percentileSizing,(auto: auto))
+  ),
+
+  "height": (
+    property: height,
+    class: h,
+    values: map-merge($percentileSizing,(auto: auto))
+  ),
+  "widthPx": (
+    property: width,
+    class: wpx,
+    values: $pixelSizing
+  ),
+  "heightPx": (
+    property: height,
+    class: hpx,
+    values: $pixelSizing
+  ),
+
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      responsive: true,
+      values: $cursor-names,
+    ),
+
+  )
+);

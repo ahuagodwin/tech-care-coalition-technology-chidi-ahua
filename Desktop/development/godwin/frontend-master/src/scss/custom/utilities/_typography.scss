@@ -1,0 +1,64 @@
+@import '../maps/typography';
+
+@each $num, $size in map-get($typography-maps,'sizes') {
+  .fs-#{$num} {font-size: var(--spa-size-#{$num}) !important;}
+  
+  /* Border Radius */
+  .rounded-px-#{$num} {border-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-top-left-px-#{$num} {border-top-left-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-top-right-px-#{$num} {border-top-right-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-bottom-right-px-#{$num} {border-bottom-right-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-bottom-left-px-#{$num} {border-bottom-left-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-top-px-#{$num} {border-top-left-radius: var(--spa-size-#{$num}) !important;border-top-right-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-end-px-#{$num} {border-top-right-radius: var(--spa-size-#{$num}) !important;border-bottom-right-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-bottom-px-#{$num} {border-bottom-left-radius: var(--spa-size-#{$num}) !important;border-bottom-right-radius: var(--spa-size-#{$num}) !important;}
+  .rounded-start-px-#{$num} {border-bottom-left-radius: var(--spa-size-#{$num}) !important;border-top-left-radius: var(--spa-size-#{$num}) !important;}
+}
+
+@each $key, $lh in map-get($typography-maps,'line-heights') {
+    .lh-#{$key}{line-height: var(--spa-lh-#{$key}) !important;}
+}
+
+@each $weight in map-get($typography-maps,'weights'){
+  @if $weight == 400{
+    .fw-#{$weight}, .fw-normal {font-weight: var(--spa-fw-#{$weight}) !important;}
+  }
+  @else if $weight == 700{
+    .fw-#{$weight}, .fw-bold {font-weight: var(--spa-fw-#{$weight}) !important;}
+  }
+  @else{
+    .fw-#{$weight} {font-weight: var(--spa-fw-#{$weight}) !important;}
+  }
+}
+
+$pixelSizing: ();
+@for $var from 1 through 1500 {
+    $pixelSizing: map-merge($pixelSizing,($var: #{$var}px))
+}
+
+@each $num, $size in $pixelSizing {
+  .mpx-#{$num} {margin: #{$size} !important;}
+  .ppx-#{$num} {padding: #{$size} !important;}
+  .mtpx-#{$num} {margin-top: #{$size} !important;}
+  .ptpx-#{$num} {padding-top: #{$size} !important;}
+  .mbpx-#{$num} {margin-bottom: #{$size} !important;}
+  .pbpx-#{$num} {padding-bottom: #{$size} !important;}
+  .mspx-#{$num} {margin-left: #{$size} !important;}
+  .pspx-#{$num} {padding-left: #{$size} !important;}
+  .mepx-#{$num} {margin-right: #{$size} !important;}
+  .pepx-#{$num} {padding-right: #{$size} !important;}
+  .mxpx-#{$num} {margin-right: #{$size} !important;margin-left: #{$size} !important;}
+  .pxpx-#{$num} {padding-right: #{$size} !important;padding-left: #{$size} !important;}
+  .mypx-#{$num} {margin-top: #{$size} !important;margin-bottom: #{$size} !important;}
+  .pypx-#{$num} {padding-top: #{$size} !important;padding-bottom: #{$size} !important;}
+
+  /*  negative values */
+  .mpx-n#{$num} {margin: -#{$size} !important;}
+  .mtpx-n#{$num} {margin-top: -#{$size} !important;}
+  .mbpx-n#{$num} {margin-bottom: -#{$size} !important;}
+  .mspx-n#{$num} {margin-left: -#{$size} !important;}
+  .mepx-n#{$num} {margin-right: -#{$size} !important;}
+  .mxpx-n#{$num} {margin-right: -#{$size} !important;margin-left: -#{$size} !important;}
+  .mypx-n#{$num} {margin-top: -#{$size} !important;margin-bottom: -#{$size} !important;}
+}
+
