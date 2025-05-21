@@ -1,0 +1,16 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "azany",
+        "azanypay",
+        "dashboardlayout",
+        "nativewind",
+        "persistor",
+        "Swipeable"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
